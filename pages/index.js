@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 //import images from "../images.json";
 import images from "../meta.json";
+import { Time } from "../components/time";
 
 // Extract the month from the current date and use this to return the current season as an array of the 3 months on the season
 function getSeason() {
@@ -66,6 +67,16 @@ export default function Home() {
         layout="fill"
         objectFit="cover"
       />
+
+      <footer>
+        <div className="meta">
+          <Time></Time>
+          <div>
+            <span>🌦 17º Photo by James M</span>
+          </div>
+        </div>
+      </footer>
+
     </div>
   );
 }

@@ -16,3 +16,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  text-align: right;
+}
+
+.meta {
+  margin: 1rem;
+  color: white;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: 100;
+  font-variant-numeric: tabular-nums;
+}
