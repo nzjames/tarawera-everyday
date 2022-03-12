@@ -15,6 +15,7 @@ export const Weather = () => {
   // Format temprature for display
   const temp = weather?.main?.temp ? asCelsius(weather.main.temp) + "°C" : null;
   // Render weather icon
+  // This will error for an invalid API key
   const icon = weather?.weather[0].icon ? (
     <Image
       src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
