@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 //import images from "../images.json";
 import images from "../meta.json";
 import { Time } from "../components/time";
+import { Weather } from "../components/weather.tsx";
 
 // Extract the month from the current date and use this to return the current season as an array of the 3 months on the season
 function getSeason() {
@@ -72,11 +73,11 @@ export default function Home() {
         <div className="meta">
           <Time></Time>
           <div>
-            <span>🌦 17º Photo by James M</span>
+            <Weather></Weather>
+            <span> Photo by James M</span>
           </div>
         </div>
       </footer>
-
     </div>
   );
 }

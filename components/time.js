@@ -16,7 +16,6 @@ export const Time = () => {
   const initialTime = formatTime(new Date());
 
   const [time, setTime] = useState(initialTime);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(formatTime(new Date()));
