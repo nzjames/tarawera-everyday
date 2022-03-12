@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-//let timer;
-
 export const Time = () => {
   const formatTime = (date) => {
     const formattedTime = {
