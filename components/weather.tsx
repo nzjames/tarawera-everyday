@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { asCelsius, getWeather } from "../helpers/weather.ts";
+import { getWeather } from "../helpers/weather.ts";
 import everydayConfig from "../everyday.config.json";
 
 try {
@@ -13,7 +13,7 @@ try {
 export const Weather = () => {
   const [weather, setWeather] = useState(null);
   // Format temprature for display
-  const temp = weather?.main?.temp ? asCelsius(weather.main.temp) + "°C" : null;
+  const temp = weather?.main?.temp ? weather.main.temp + "°C" : null;
   // Render weather icon
   // This will error for an invalid API key
   const icon = weather?.weather[0].icon ? (
