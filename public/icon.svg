@@ -1,0 +1,30 @@
+<svg width="512" height="512" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		.background {
+			fill: #000;
+		}
+
+		.mountain {
+			fill: #fff;
+		}
+
+		@media (prefers-color-scheme:dark) {
+			.background {
+				fill: #fff;
+			}
+
+			.mountain {
+				fill: #000;
+			}
+		}
+	</style>
+	<circle cx="256" cy="256" r="256" class="background" />
+	<mask id="mask0_4_14" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="36" y="36" width="441" height="441">
+		<circle cx="256.399" cy="256.399" r="219.657" class="background" />
+	</mask>
+	<g mask="url(#mask0_4_14)">
+		<path
+			d="M384.612 256h478.019l159.009 101.072h262.51L1584 439.52V504H-717v-32.24l562.756-150.04 49.975-65.72h266.168l71.703 65.72L384.612 256Z"
+			class="mountain" />
+	</g>
+</svg>

@@ -60,7 +60,10 @@ export default function Home() {
       <Head>
         <title>Tarawera Everyday</title>
         <meta name="description" content="Seasonal Photos of Lake Tarawera" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Image
         src={`https://s3.us-west-2.amazonaws.com/nz.everyday.dev/${image.name}`}
