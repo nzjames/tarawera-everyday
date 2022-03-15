@@ -13,7 +13,9 @@ try {
 export const Weather = () => {
   const [weather, setWeather] = useState(null);
   // Format temprature for display
-  const temp = weather?.main?.temp ? weather.main.temp + "°C" : null;
+  const temp = weather?.main?.temp
+    ? Math.round(weather.main.temp) + "°C"
+    : null;
   // Render weather icon
   // This will error for an invalid API key
   const icon = weather?.weather[0].icon ? (

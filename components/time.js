@@ -2,12 +2,23 @@ import React, { useState, useEffect } from "react";
 
 export const Time = () => {
   const formatTime = (date) => {
+    // const formattedTime = {
+    //   hours: date.getHours(),
+    //   minutes: date.getMinutes().toString().padStart(2, "0"),
+    //   seconds: date.getSeconds().toString().padStart(2, "0"),
+    // };
+    const nzDateTime = date
+      .toLocaleTimeString("en-NZ", {
+        timeZone: "Pacific/Auckland",
+        hour12: false,
+      })
+      .split(":");
+    // console.log(nzDateTime);
     const formattedTime = {
-      hours: date.getHours(),
-      minutes: date.getMinutes().toString().padStart(2, "0"),
-      seconds: date.getSeconds().toString().padStart(2, "0"),
+      hours: nzDateTime[0],
+      minutes: nzDateTime[1],
+      seconds: nzDateTime[2],
     };
-    //console.log(formattedTime);
     return formattedTime;
   };
 
